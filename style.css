@@ -1,0 +1,20 @@
+:root{--bg:#0b0420;--panel:#140a30;--ink:#f3f1ff;--sub:#a99ee0;--line:#2f2160;--accent:#00f5d4;--pink:#f15bb5}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);
+font-family:Bahnschrift,'Segoe UI',system-ui,-apple-system,sans-serif;line-height:1.55}
+a{color:var(--accent)}main{max-width:880px;margin:0 auto;padding:24px 16px 48px}
+header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;
+border-bottom:1px solid var(--pink);padding-bottom:10px;margin-bottom:18px}
+header h1{font-size:1.25rem;letter-spacing:.12em;margin:0}header .when{color:var(--sub);font-family:Consolas,monospace;font-size:.9rem}
+.card img{width:100%;height:auto;border-radius:14px;display:block;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.reading{font-size:1.1rem;margin:18px 0 6px}.note{color:var(--sub);font-size:.85rem;margin:4px 0}
+section{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-top:22px}
+section h2{font-size:.95rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sub);margin:0 0 10px}
+.ladder{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:0}.ladder dt{font-family:Consolas,monospace;color:var(--sub)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px}img{max-width:100%}
+.grid a{min-width:0;text-decoration:none;color:var(--sub);font-family:Consolas,monospace;font-size:.78rem;text-align:center}
+.grid img{width:100%;height:auto;aspect-ratio:1/1;border-radius:8px;display:block;margin-bottom:4px}
+.archive{position:relative}.archive.collapsed{overflow:hidden;contain:paint}.archive.collapsed::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(rgba(20,10,48,0),var(--panel));pointer-events:none}.more{display:block;margin:12px auto 0;background:transparent;color:var(--accent);border:1px solid var(--line);border-radius:999px;padding:6px 16px;font:inherit;font-size:.85rem;cursor:pointer}.more:hover{border-color:var(--accent)}
+table{border-collapse:collapse;width:100%;font-size:.9rem;margin:10px 0}th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left}
+th{color:var(--sub);font-weight:normal}nav{display:flex;gap:16px;margin-top:26px;flex-wrap:wrap}
+footer{color:var(--sub);font-size:.8rem;margin-top:28px;border-top:1px solid var(--line);padding-top:12px}
+code{font-family:Consolas,monospace;font-size:.85em}
